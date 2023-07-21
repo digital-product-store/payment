@@ -35,5 +35,3 @@ services:
         - "8003:8000"
       environment:
         - ELASTIC_APM_SERVER_URL=http://apm-server:8200
-      links:
-        - apm-server
