@@ -25,12 +25,12 @@ jobs:
 
       - name: autoflake
         run: |
-          autoflake --check -r app/
+          autoflake --check -r src/
 
       - name: flake8
         run: |
-          flake8 app/
+          flake8 src/
 
       - name: black
         run: |
-          black --check app/
+          black --check src/
